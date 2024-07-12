@@ -13,7 +13,7 @@ function randNumGenerator(num) {
 function getHome() {
   let homes = ['Mansion', 'Castle', 'Shack', 'House'];
   if (inputHome != undefined) {
-    return inputHome;
+    homes.push(inputHome);
   }
   return homes[randNumGenerator(homes.length)];
 }
@@ -74,6 +74,9 @@ function mash() {
   ) {
     statement = statement + '\nSorry! You got really unlucky :(';
   }
-  return statement;
+  // return statement;
+  console.log(statement);
 }
-console.log(mash());
+// console.log(mash());
+
+mash();
